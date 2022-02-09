@@ -1,0 +1,542 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    font-family: 'Work Sans', sans-serif;
+    color: #344464;
+}
+body a{
+    text-decoration: none;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    
+}
+button{
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    background-color: #0a2341;
+    color: white;
+    border-radius: 5px;
+    padding: 4% 20%;
+    transition-duration: 0.7s;
+    cursor: pointer;
+}
+button:hover{
+    color: #11345B;
+    background-color: #ffffff;
+    padding: 4% 27%;
+    transition-duration: 0.7s;
+}
+
+
+
+hr{
+    max-width: 50%;
+}
+/*
+navigation bar
+===================================
+*/
+.navigationtag{
+    width: 100%;
+    background-color: #11345B; 
+}
+.navcontainer{
+    width: calc(100% - 12px);
+    font-size: 20px;
+    font-weight: 350;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: #0f2846;
+}
+
+.navcontainer a {
+    width: 100%;
+    padding:  2.2% 0% 2.2% 0% ;
+    background-color: #11345B;
+    color: white;
+    transition-duration: 0.4s;
+}
+.navcontainer a:hover {
+    transform: translate3d(12px,12px,10px);
+    transform: perspective(20);
+    transition-duration: 0.4s;
+    box-shadow: 0px 0px 15px 0px black;
+    border-radius: 0px 0px 20px 20px ;
+}
+.des{
+    font-weight: 700;
+}
+.helojulian {
+background-color:#ffffff;
+}
+.helojulian h1{
+    margin: 3%;
+}
+.helojulian{
+    display: flex;
+    flex-wrap: wrap;
+}
+.helojulian h1,video{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    justify-content: space-around;
+}
+.material-icons{
+    font-size: 60px;
+    border-radius: 100%;
+    padding-right: 20px;
+}
+.objective{
+    background-color: #11345B;
+    padding: 5%;
+}
+.objective p{
+    padding: 3%;
+    color: white;
+    margin: auto;
+    font-weight: 200;
+    max-width: 70%;
+    text-align: justify;
+    text-align: center;
+}
+.buttoncontainer{
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.eduandwork div{
+    display: flex;
+    align-items: center;
+}
+.eduandwork{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.eduandwork{
+    margin: 5%;
+}
+.description-container {
+    position: relative;
+    margin: 5%;    
+    padding: 5%;
+    text-align: center;
+    background-color: #eff2f8;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.description-container span{
+    width: 100%;
+}
+.description-container .year{
+    font-weight: 600;
+    font-size: 23px;
+}
+.description-container .titledescription {
+    font-weight: 700;
+    font-size: 30px;
+}
+.description-container .subtitledes {
+    font-weight: 300;
+    font-size: 25px;
+}
+.grid-conatiner{
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    justify-content: space-around;
+    align-content: space-around;
+    grid-auto-rows: minmax(1fr ,1fr);
+}
+.extrastudies-con{
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    justify-content: space-around;
+    align-content: space-around;
+    grid-auto-rows: minmax(1fr ,1fr);
+}
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #11345B;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+.description-container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  .text {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  .text a {
+    text-decoration: none; 
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.7s;
+  }
+  .text:hover {
+    transition-duration: 0.7s;
+    background-color: white ;
+    color: #11345B;
+    padding: 10px 30px;
+    border-radius: 10px;
+  }
+  .text a:hover {
+    transition-duration: 0.7s;
+    color: #11345B;
+    padding: 10px 30px;
+    border-radius: 10px;
+  }
+  #displaymore{
+      text-align: center;
+      font-size: 25px;
+      cursor: pointer;
+      margin-bottom: 1%;
+      transition-duration: 0.7s;
+  }
+  #displaymore:hover{
+      font-weight: 500;
+    letter-spacing: 5px;
+    transition-duration: 0.7s;
+
+}
+  .query-hide{
+      display: none;
+  }
+  .languages {
+      color: white;
+      background-color: #11345B;
+      padding: 2%;
+  }
+  .languages h1{
+text-align: center;
+}
+
+
+/* Header */
+.large-header {
+  position: relative;
+  width: 100%;
+  background: #11345B;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+}
+#large-header {
+  background-image: url("https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg");
+}
+.main-title {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  color: #11345B;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+.demo-1 .main-title {
+  text-transform: uppercase;
+  font-size: 4.2em;
+  letter-spacing: 0.1em;
+}
+.main-title .thin {
+  font-weight: 200;
+}
+@media only screen and (max-width: 768px) {
+  .demo-1 .main-title {
+    font-size: 3em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    background: #ffffff;
+  }
+  
+  @-webkit-keyframes polygon {
+    0% {
+      stroke-dasharray:0 300;
+    }
+    100% {
+      stroke-dasharray:300 0;
+    }
+  }
+  @keyframes polygon {
+    0% {
+      stroke-dasharray:0 300;
+    }
+    100% {
+      stroke-dasharray:300 0;
+    }
+  }
+  polygon {
+    stroke-width: 1;
+    fill: transparent;
+    stroke: #11345B; 
+    stroke-miterlimit: 10; 
+  }
+  .hex1 {
+    animation: 4s polygon forwards;
+    -webkit-animation: 4s polygon forwards;
+  }
+  .hex2 {
+    animation: 8s polygon forwards;
+    -webkit-animation: 8s polygon forwards;
+  }
+  .hex3 {
+    animation: 12s polygon alternate backwards;
+    -webkit-animation: 12s polygon alternate backwards;
+  }
+  .hex4 {
+    animation: 10s polygon alternate backwards;
+    -webkit-animation: 10s polygon alternate backwards;
+  }
+  circle {
+    fill: #344464;
+    -webkit-animation-name: circle-glow;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
+    
+    animation-name: circle-glow;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    
+  }
+  
+  @-webkit-keyframes circle-glow { 
+    0% { fill: #11345B; }
+    50% { fill: #11345B; }
+    100% { fill: #11345B; }
+  }
+  
+  @keyframes circle-glow { 
+    0% { fill: #11345B; }
+    50% { fill: #11345B; }
+    100% { fill: #11345B; }
+  }
+  .language-container{
+      display: flex;
+      justify-content: space-around;
+      margin: 7%;
+  }
+  .language-knowlage{
+      text-align: center;
+      
+  }
+  .bar-knowladge{
+    border: #11345B solid 4px;
+    background-color: #11345B;
+    min-height: 200px;
+    margin: 20% 0%;
+  }
+  .fillment{
+    width: 100%;
+    background-color: white;
+    min-height: 3vh;
+  }
+  .fillment-fr{
+    width: 100%;
+    background-color: white;
+    min-height: 10vh;
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    border-radius: 20px;
+
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 3px 20px 20px 3px rgba(0,0,0,0.2);
+    border-radius: 20px;
+
+    
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    
+
+  }
+  
+  .flip-card-front {
+    background-color: #eef4ff;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #18385d;
+    border-radius: 20px;
+    flex-wrap: wrap;
+
+  }
+  
+  .flip-card-back {
+    background-color: #0c2542;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 200;
+    font-size: 30px;
+  }
+  .flip-card-back p{
+      color: white;
+  }
+  .icon-flip{
+      font-size: 100px;
+      text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);;
+  }
+  .grid-container-skills-diplay{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+  }
+  .grid-item{
+    margin: 20px;
+}
+#left-out{
+    grid-column: span 2;
+    margin: auto;
+}
+.skills-conatiner{
+    background-image: radial-gradient( rgb(76, 96, 151),#0c2542);
+}
+#skills{
+    color: white;
+    text-align: center;
+    padding: 5% 0%;
+}
+.contact-style{
+    min-width: 100%;
+    text-align: center;
+    color: #0c2542;
+    margin: 4% 0%;
+}
+input{
+    transition-duration: 1s;
+    border: none;
+    border-bottom: solid 2px #ffffff;
+    outline: none;
+    padding: 20px;
+    margin: 5%;
+    background-color: #0c2542;
+    border-radius: 20px 20px 0px 0px;
+}
+input:focus{
+    transition-duration: 1s;
+    background-color: white;
+}
+input[type=text]{
+    color: white;
+    outline: none;
+}
+.message-style{
+    border: solid 2px #0c2542;
+    border-bottom: solid 2px #ffffff;
+    min-width: 70%;
+    min-height: 100px;
+}
+.contact-container button{
+    margin: 5%;
+    border: solid 2px #ffffff;
+}
+.contact-container{
+    display: flex;
+    max-width: 80%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 16px 16px 16px 20px rgb(182, 181, 181);
+}
+.form-conatainer{
+ background-color: #0c2542;
+ border-radius: 20px 0px 0px 20px ;
+ width: 70%;
+}
+.div-contact-information{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    margin: 5%;
+}
+.div-contact-information img {
+    max-width: 60px;
+}
+.div-contact-information a,p{
+    color: #0a2341;
+}
+footer{
+    background-color: #0a2341;
+    margin-top: 10%;
+    padding: 3% 0%;
+}
+footer a{
+    color: #335277;
+}
+.email-style{
+    color: #1377b7;
+}

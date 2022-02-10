@@ -18,6 +18,54 @@ switchContentDisplay.forEach((e) => {
 }
 
 
+function displayContentWorkPhone() {
+    var displayContent = 'block'
+    var hideContent = 'none'
+    var switchContentDisplay = document.querySelectorAll('.query-hide2')
+    switchContentDisplay.forEach((e) => {
+        if (e.style.display == hideContent){
+            e.style.display = displayContent
+                document.getElementById('displaymore2').innerHTML = 'LESS...'
+        }
+        else {
+            e.style.display = hideContent
+                document.getElementById('displaymore2').innerHTML = 'MORE...'
+        }
+    });
+    }
+
+    function displayContentEduPhone() {
+        var displayContent = 'block'
+        var hideContent = 'none'
+        var switchContentDisplay = document.querySelectorAll('.query-hide1')
+        switchContentDisplay.forEach((e) => {
+            if (e.style.display == hideContent){
+                e.style.display = displayContent
+                    document.getElementById('displaymore1').innerHTML = 'LESS...'
+            }
+            else {
+                e.style.display = hideContent
+                    document.getElementById('displaymore1').innerHTML = 'MORE...'
+            }
+        });
+        }
+
+        function displayContentSkillsPhone() {
+            var displayContent = 'block'
+            var hideContent = 'none'
+            var switchContentDisplay = document.querySelectorAll('.query-hide3')
+            switchContentDisplay.forEach((e) => {
+                if (e.style.display == hideContent){
+                    e.style.display = displayContent
+                        document.getElementById('displaymore3').innerHTML = 'LESS...'
+                }
+                else {
+                    e.style.display = hideContent
+                        document.getElementById('displaymore3').innerHTML = 'MORE...'
+                }
+            });
+            }
+
 const counters = document.querySelectorAll('.bar');
 const speed = 800;
 

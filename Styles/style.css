@@ -544,16 +544,9 @@ footer a{
 .email-style{
     color: #1377b7;
 }
-#phone-nav{
+#phone-nav, .phone-container-display, .contact-container1, .phone-form-aside{
   display: none;
 }
-.phone-container-display{
-  display: none;
-}
-.contact-container1{
-  display: none;
-}
-
 
 
 

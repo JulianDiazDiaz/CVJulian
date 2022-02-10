@@ -563,6 +563,9 @@ footer a{
 
 
 @media screen and (max-width: 750px) {
+  .contact-container1, .phone-form-aside{
+    display: block;
+  }
   .contact-container1{
     background-color: #0a2341;
     padding-top: 10%;
@@ -649,17 +652,11 @@ ul {
   padding: 0;
   list-style-type: none;
 }
-
-
-
 nav {
   background-color: #0a2341;
   height: 65px;
 }
-
-
 #menuToggle {
-  max-width: 98%;
   display: flex;
   flex-direction: column;
   position: relative;

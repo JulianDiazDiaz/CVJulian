@@ -568,7 +568,7 @@ footer a{
 
 
 :root {
-  --home-bg-color: #ffffff;
+  --home-bg-color: #0a2341;
   --menu-bg-color: #ffffff;
   --silde-btn-border: #ffffff;
   --slide-btn-bg: #ffffff;
@@ -577,12 +577,12 @@ footer a{
   --icon-hover-color: #0a2341;
   --icon-hover-bg: #ffffff;
   --text-color: #ffffff;
-  --border-color: #0a2341;
-  --heading-color: #34384a;
+  --border-color: #ffffff;
+  --heading-color: #ffffff;
   --box-shadow-color: #ffffff;
   --lightest-green: #ffffff;
   --light-green: #ffffff;
-  --dark-green: rgba(52, 60, 74, 0.86);
+  --dark-green: rgba(255, 255, 255, 0.86);
   --box-shadow: 0px 0px 3px 5px var(--box-shadow-color);
   --border-radius: 60px 5px;
   --fade-green: rgba(57, 57, 87, 0.55);
@@ -851,7 +851,16 @@ a {
   padding: 10px;
   text-align: center;
 }
-
+.flip-card .flip-card-inner {
+  transform: rotateY(180deg);
+}
+  
+.flip-card-back {
+  background-color: #ffffff;
+}
+.flip-card-back p{
+ color:#0a2341;
+}
 .navigationtag{
   display: none;
 }

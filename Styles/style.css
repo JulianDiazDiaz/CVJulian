@@ -375,12 +375,12 @@ body {
   .fillment{
     width: 100%;
     background-color: white;
-    min-height: 4vh;
+    min-height: 5vh;
   }
   .fillment-fr{
     width: 100%;
     background-color: white;
-    min-height: 13vh;
+    min-height: 16vh;
   }
   .flip-card {
     background-color: transparent;
